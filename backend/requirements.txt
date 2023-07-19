@@ -155,3 +155,4 @@ websockets==11.0.3
 Werkzeug==2.3.4
 whisper==1.1.10
 yarl==1.9.2
+psycopg2==2.9.6
