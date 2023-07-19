@@ -12,8 +12,8 @@ app = Flask(__name__)
 
 
 # Adding configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:''@localhost/flaskdb'
-#app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:iXSr24bTOFu0BhzwdxSZ@containers-us-west-72.railway.app:7606/railway"
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:''@localhost/flaskdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://root:22wPdLYCuH7a8wDopGI9iE5pMa4RSzrO@dpg-cirv29h8g3n42olh0hgg-a/db_srky"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
