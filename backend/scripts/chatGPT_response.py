@@ -2,7 +2,7 @@ import openai
 
 def main(data):
     # openai.api_key = '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'
-    openai.api_key = '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'
+    openai.api_key = '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'
     # openai.api_key = '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'
 
     # creating query to chatGPT
@@ -11,7 +11,7 @@ def main(data):
                     "-date_1 : time_1 : event_1;" +
                     "-date_2 : time_2 : event_2;" +
                     "and so on..."},
-        {"role": "system", "content": data}
+        {"role": "system", "content": "The dialog is here: " + data}
     ]
 
     print('\nSending message to ChatGPT...')
