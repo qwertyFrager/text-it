@@ -1,9 +1,11 @@
-import openai
+from openai import OpenAI
 
 def main(data):
-    # openai.api_key = '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'
-    openai.api_key = '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'
-    # openai.api_key = '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'
+
+    client = OpenAI(
+      api_key="your key",
+      base_url="https://api.proxyapi.ru/openai/v1",
+    )
 
     # creating query to chatGPT
     messages = [
@@ -15,7 +17,7 @@ def main(data):
     ]
 
     print('\nSending message to ChatGPT...')
-    completion = openai.ChatCompletion.create(
+    completion = client.chat.completions.create(
       model="gpt-3.5-turbo",
       messages=messages
     )

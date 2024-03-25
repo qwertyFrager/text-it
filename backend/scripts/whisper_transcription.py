@@ -21,7 +21,7 @@ def main(sound):
 
 
     pipeline = Pipeline.from_pretrained("pyannote/speaker-diarization",
-                                        use_auth_token="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")
+                                        use_auth_token="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")
     model = whisper.load_model("base")
 
     # Распознавание языка + вывод того, какой язык
